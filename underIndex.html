@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./underIndex.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input -->
+        <div class="top">
+            <span>
+                <label for="productName">Product Name</label>
+                <input type="text" id="productName" placeholder="Nhập tên sản phẩm">
+            </span>
+            <span>
+                <label for="productQuantity">Product Quantity</label>
+                <input type="number" id="productQuantity" placeholder="Nhập số lượng sản phẩm">
+            </span>
+            <span>
+                <label for="productPrice">Product Price</label>
+                <input type="number" id="productPrice"  placeholder="Nhập giá sản phẩm">
+            </span>
+        </div>
+        <!-- Button -->
+        <div class="buttonAdd">
+            <button id="addProduct">Add</button>
+        </div>
+        <!-- Table -->
+        <div class="data">
+            <table id="tble">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Sub-total</th>
+                    </tr>
+                </thead>
+                <tfoot id="addLastTotal">
+                    <tr>
+                        <td colspan="4">Total</td>
+                        <td id="totalValue">0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    <div id="test"></div>
+    <script src="./underIndex.js"></script>
+</body>
+</html>

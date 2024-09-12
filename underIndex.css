@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+.container{
+    margin: 0  auto;
+    width: 400px;
+    background-color: aqua;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.top{
+    display: flex;
+    row-gap: 12px;
+    flex-direction: column;
+}
+label{
+    display: inline-block;
+    width: 112px;
+}
+.buttonAdd{
+    margin-top: 12px;
+}
+button{
+    padding: 5px 10px;
+}
+table{
+    width: 100%;
+    border: 1px solid black;
+    margin-top: 12px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}

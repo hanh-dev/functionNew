@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">New Product</h1>
+        <div class="wrapp-infor">
+            <div class="wrapp-input">
+                <div class="wrapp-input_left">
+                    <!-- Product Name -->
+                    <div class="product-name">
+                        <label for="productName">Product Name</label>
+                        <input type="text" placeholder="Nhập tên sản phẩm" id="productName">
+                    </div>
+                    <!-- Unit price -->
+                    <div class="unitPrice">
+                        <label for="unitPrice">Unit Price</label>
+                        <input type="text" placeholder="Nhập giá sản phẩm" class="price-special" id="unitPrice">
+                    </div>
+                </div>
+                <div class="wrapp-input_right">
+                    <!-- Quantity -->
+                    <div class="quantity">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" placeholder="Nhập số lượng" id="quantity">
+                    </div>
+                    <!-- Discount -->
+                    <div class="discount">
+                        <label for="discount">Discount</label>
+                        <input type="number" placeholder="Nhập giảm giá" id="discount">
+                    </div>
+                </div>
+            </div>
+            <div class="wrapp-button">
+                <button id="sell">Sell</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        </div>
+        <div class="data">
+            <table class="productManage" id="tble">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Discount</th>
+                        <th>Subtotal</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <tr>
+                        <td>1</td>
+                        <td>Quần thun</td>
+                        <td>12</td>
+                        <td>$3000</td>
+                        <td>10</td>
+                        <td>$324000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="test"></div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>

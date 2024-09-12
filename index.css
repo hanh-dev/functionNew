@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+}
+.container{
+    margin: 0 auto;
+    width: 600px;
+    height: 500px;
+    background-color: aqua;
+    padding: 20px;
+}
+.heading{
+    position: relative;
+}
+.heading::after{
+    content: '';
+    position: absolute;
+    border-bottom: 1px solid black;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.wrapp-input{
+    display: flex;
+    margin-top: 12px;
+    
+}
+.wrapp-input_left{
+    flex: 1;
+    row-gap: 10px;
+}
+.price-special{
+    margin-left: 27px
+}
+.wrapp-button{
+    margin-top: 12px;
+    text-align: center;
+}
+button{
+    padding: 4px 12px;
+}
+.data{
+    margin-top: 12px;
+    text-align: center;
+}
+table{
+    width: 100%;
+    border: 1px solid black;    
+}
+#tble tr th, #tble tr td{
+    text-align: left;
+    border-bottom: 1px solid black;
+}
+#tble tr:last-child td{
+    border: none;
+}
