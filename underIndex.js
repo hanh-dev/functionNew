@@ -8,6 +8,7 @@ const addButton = document.getElementById('addProduct')
 let no = 1;
 let total = 0;
 addButton.addEventListener('click', function(){
+    
     const productNameReal = productName.value;
     let productQuantityReal = parseInt(productQuantity.value);
     // Add the condition when the value is invalid
@@ -18,19 +19,23 @@ addButton.addEventListener('click', function(){
     while(productPriceReal<=0){
         productPriceReal = parseFloat(prompt('Nhập lại giá sản phẩm lớn hơn 0',1000))
     }
-    const subTotal = (productQuantityReal*productPriceReal);
-    total+=subTotal;
-    let addRow = "<tr>";
-    addRow+="<td>"+no+"</td>";
-    addRow+="<td>"+productNameReal+"</td>";
-    addRow+="<td>"+productQuantityReal+"</td>";
-    addRow+="<td>"+productPriceReal+"</td>";
-    addRow+="<td>"+subTotal+"</td>";
-    addRow+="</tr>"
-    document.getElementById('tble').innerHTML += addRow;
-    document.getElementById('totalValue').innerHTML = total;
-    no++;
-    productName.value = '';
-    productQuantity.value = '';
-    productPrice.value = '';
+    if (productNameReal === ''|| productPriceReal === '' || productQuantityReal === ''){
+        alert('Vui lòng điền thông tin đây đủ')
+    }else{
+        const subTotal = (productQuantityReal*productPriceReal);
+        total+=subTotal;
+        let addRow = "<tr>";
+        addRow+="<td>"+no+"</td>";
+        addRow+="<td>"+productNameReal+"</td>";
+        addRow+="<td>"+productQuantityReal+"</td>";
+        addRow+="<td>"+productPriceReal+"</td>";
+        addRow+="<td>"+subTotal+"</td>";
+        addRow+="</tr>"
+        document.getElementById('tble').innerHTML += addRow;
+        document.getElementById('totalValue').innerHTML = total;
+        no++;
+        productName.value = '';
+        productQuantity.value = '';
+        productPrice.value = '';
+    }
 })

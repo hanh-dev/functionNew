@@ -30,13 +30,13 @@ body{
     margin-top: 12px;
     
 }
-.wrapp-input_left{
+/* .wrapp-input_left{
     flex: 1;
     row-gap: 10px;
-}
-.price-special{
+} */
+/* .price-special{
     margin-left: 27px
-}
+} */
 .wrapp-button{
     margin-top: 12px;
     text-align: center;
@@ -58,4 +58,7 @@ table{
 }
 #tble tr:last-child td{
     border: none;
+}
+label {
+    width: 112px;
 }
